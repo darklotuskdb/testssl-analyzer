@@ -54,7 +54,7 @@ Vrn="SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 TLSv1.3"
 
 for i in $Vrn
   do
-        if ! cat ${ifile} | grep -w ${i} -A1 | grep -v '\--' | grep -w '-' &> /dev/null
+        if ! cat ${ifile} | grep "${i}" -A1 | grep -v '\--' | grep -w '-' &> /dev/null
           then echo -e "\t ${i}"
         fi
 done
