@@ -10,6 +10,7 @@ git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-ana
 ```
 
 ## Usage
+Input file here is the output file of testssl scan and it should not contain any spaces.
 ```
 ./testssl-analyzer.sh testssl-output-file.txt
 ```
