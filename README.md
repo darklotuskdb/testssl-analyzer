@@ -14,7 +14,7 @@ git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-ana
 ```
 path/to/your/testssl.sh/testssl.sh https://target.com | tee testssl-output-file.txt
 ```
-### OR
+#### OR
 
 If you had cloned inside testssl.sh directory
 ```
