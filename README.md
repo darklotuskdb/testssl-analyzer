@@ -1,12 +1,13 @@
 # TestSSL Output Analyzer
 Use to quickly analyzer the TestSSL scan output
 
-
-
 ## Installation
 
 ```
-git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-analyzer && chmod +x *.sh && cp testssl-analyzer.sh /usr/bin
+git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-analyzer && chmod +x *.sh
+```
+```
+export PATH=$PATH:$(pwd) && echo "export PATH=$PATH:$(pwd)" >> .zshrc && echo "export PATH=$PATH:$(pwd)" >> .bashrc
 ```
 
 ## Usage
