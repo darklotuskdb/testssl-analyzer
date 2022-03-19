@@ -3,7 +3,7 @@ Use to quickly analyzer the TestSSL scan output
 
 ## Installation
 ```
-cd path/to/testssl.sh/
+cd path/to/your/testssl.sh/
 ```
 ```
 git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-analyzer && chmod +x *.sh
