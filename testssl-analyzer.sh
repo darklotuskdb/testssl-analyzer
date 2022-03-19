@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ifile=${1}
+ifile="$1"
 
 banner(){
 cat ./banner.txt
