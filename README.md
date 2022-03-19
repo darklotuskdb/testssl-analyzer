@@ -14,6 +14,12 @@ git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-ana
 ```
 path/to/your/testssl.sh/testssl.sh https://target.com | tee testssl-output-file.txt
 ```
+### OR
+
+If you had cloned inside testssl.sh directory
+```
+../testssl.sh https://target.com | tee testssl-output-file.txt
+```
 
 Input file here is the output file of testssl scan and it should not contain any spaces.
 ```
