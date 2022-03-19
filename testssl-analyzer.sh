@@ -9,7 +9,7 @@ echo
 }
 
 Cert(){
-a=$(cat $ifile | grep -i 'Certificate Validity')
+a=$(cat ${ifile} | grep -i 'Certificate Validity')
 b=$(echo "$a" | cut -d ' ' -f 7)
 
 	if echo "${a}" | grep -i 'expired' &> /dev/null
@@ -26,12 +26,12 @@ fi
 Wcip(){
 echo -e "\e[93m[+] Searching For Weak Ciphers\e[0m"
 
-cat $ifile | grep '_CBC_' | grep -w 'AES'
+cat ${ifile} | grep '_CBC_' | grep -w 'AES'
 
 Cip="TLS_RSA_WITH_3DES_EDE_CBC_SHA TLS_RSA_WITH_RC4_128_MD5 TLS_RSA_WITH_RC4_128_SHA TLS_DH_Anon_WITH_SEED_CBC_SHA TLS_DH_Anon_WITH_AES_128_GCM_SHA256 TLS_ECDH_Anon_WITH_AES_128_CBC_SHA TLS_ECDH_Anon_WITH_AES_256_CBC_SHA"
 for Per in $Cip;
         do
-          cat $ifile | grep "${Per}"
+          cat ${ifile} | grep "${Per}"
         done
 }
 
@@ -42,7 +42,7 @@ Vrn="SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2 TLSv1.3"
 
 for i in $Vrn
   do
-        if ! cat $ifile | grep -w ${i} -A1 | grep -v '\--' | grep -w '-' &> /dev/null
+        if ! cat ${ifile} | grep -w ${i} -A1 | grep -v '\--' | grep -w '-' &> /dev/null
           then echo -e "\t ${i}"
         fi
 done
@@ -50,7 +50,7 @@ done
 
 Vsof(){
 echo -e "\e[93m[+] Checking For Vulnerabilities\e[0m"
-V=$(cat $ifile | grep 'Testing vulnerabilities' -A30 | grep 'VULNERABLE' | cut -d ' ' -f 2)
+V=$(cat ${ifile} | grep 'Testing vulnerabilities' -A30 | grep 'VULNERABLE' | cut -d ' ' -f 2)
 for i in $V
 	do echo -e "\t ${i}"
 done
