@@ -68,8 +68,16 @@ for i in $V
 done
 }
 
+CmdG(){
+echo -e "\e[32m[+] Input The URL To Generate The Command With -S, -E, -U Flags For TestSSL\e[0m"
+read Url
+echo "./testssl.sh -S $Url && ./testssl.sh -E $Url && ./testssl.sh -U $Url"
+echo
+}
+
 banner
 Wcip
 Vsof
 Vchk
 Cert
+CmdG
