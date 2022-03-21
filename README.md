@@ -6,7 +6,7 @@ Use to quickly analyzer the TestSSL scan output
 git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-analyzer && chmod +x *.sh
 ```
 ```
-sudo cp testssl-analyzer.sh /usr/local/bin/
+sudo cp testssl-analyzer.sh /usr/local/bin/testssl-analyzer
 ```
 
 ## Usage
