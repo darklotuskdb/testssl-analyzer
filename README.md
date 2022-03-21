@@ -3,7 +3,10 @@ Use to quickly analyzer the TestSSL scan output
 
 ## Installation
 ```
-wget https://raw.githubusercontent.com/darklotuskdb/testssl-analyzer/main/testssl-analyzer.sh && chmod +x testssl-analyzer.sh && sudo cp testssl-analyzer.sh /usr/local/bin/
+git clone https://github.com/darklotuskdb/testssl-analyzer.git && cd testssl-analyzer && chmod +x *.sh
+```
+```
+sudo cp testssl-analyzer.sh /usr/local/bin/
 ```
 
 ## Usage
