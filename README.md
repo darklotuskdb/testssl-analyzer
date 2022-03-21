@@ -16,7 +16,7 @@ path/to/your/testssl.sh/testssl.sh https://target.com | tee testssl-output-file.
 ```
 Input file here is the output file of testssl scan and it should not contain any spaces.
 ```
-testssl-analyzer.sh testssl-output-file.txt
+testssl-analyzer testssl-output-file.txt
 ```
 
 ### Screenshot
